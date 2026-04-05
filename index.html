@@ -9,45 +9,188 @@
 </head>
 
 <body class="bg-slate-900 text-slate-200 p-4">
-    <main class="max-w-3xl mx-auto">
+    <main class="max-w-4xl mx-auto">
 
-<div class="flex flex-col md:flex-row md:items-start gap-4">
-    
-    <div class="text-emerald-100 mt-[108px] min-w-[150px] md:text-right hidden md:block text-sm">
-        Crea un directorio<br>
-        Ubicarse en el directorio
+        <header>
+            <h1 class="text-3x1 font-black text-white mt-2">Practica Git y GitHub</h1>
+            <p classs="text-slate-400 mt-2 text-sm">Comandos Basicos Git y GitHub</p>
+        </header><br>
 
-    </div>
-    
-<header>
-    <h1 class="text-3x1 font-black text-white mt-2">Practica Git y GitHub</h1>
-    <p classs="text-slate-400 mt-2 text-sm">Comandos Basicos Git y GitHub</p>
-</header>
-    <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
-        <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">01</div>
-        <h3 class="font-bold text-white uppercase text-xs">Inicializar Proyecto</h3>
-        
-        <div class="bg-black/60 p-4 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3">
-            <span class="text-emerald-100">$</span> mkdir <span class="text-yellow-400">proyecto-git</span><br>
-            <span class="text-emerald-100">$</span> cd <span class="text-yellow-400">proyecto-git</span><br>
-            <span class="text-emerald-100">$</span> git init <br>
-            <span class="text-emerald-100">$</span> git clone <span class="text-yellow-400">/path/repositorio (local)</span> <br>
-            <span class="text-emerald-100">$</span> git clone <span class="text-yellow-400">username@host:/path/repositorio (remoto)</span>
-        </div>          
-    </div>
-</div>
+        <div class="flex flex-col md:flex-row md:items-start gap-4">
 
-        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+
+            <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
+                <div
+                    class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">
+                    01</div>
+                <h3 class="font-bold text-white uppercase text-xs">Inicializar Proyecto</h3>
+
+                <style>
+                    @keyframes point-right {
+
+                        0%,
+                        100% {
+                            transform: translateX(0);
+                        }
+
+                        50% {
+                            transform: translateX(10px);
+                        }
+
+                        /* Movimiento un poco más amplio */
+                    }
+
+                    .animate-point {
+                        display: inline-flex;
+                        animation: point-right 1.5s ease-in-out infinite;
+                    }
+                </style>
+
+                <div
+                    class="bg-black/60 p-5 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3 grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 items-center">
+
+                    <div class="text-blue-400 flex items-center justify-between gap-4">
+                        <span>Crear un directorio</span>
+                        <span class="animate-point text-indigo-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div><span class="text-emerald-100">$</span> mkdir <span class="text-yellow-400">proyecto-git</span>
+                    </div>
+
+                    <div class="text-blue-400 flex items-center justify-between gap-4">
+                        <span>Ir al directorio</span>
+                        <span class="animate-point text-indigo-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div><span class="text-emerald-100">$</span> cd <span class="text-yellow-400">proyecto-git</span>
+                    </div>
+
+                    <div class="text-blue-400 flex items-center justify-between gap-4">
+                        <span>Crea un nuevo repositorio</span>
+                        <span class="animate-point text-indigo-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div><span class="text-emerald-100">$</span> git init</div>
+
+                    <div class="text-blue-400 flex items-center justify-between gap-4">
+                        <span>Clonar un repositorio local</span>
+                        <span class="animate-point text-indigo-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div><span class="text-emerald-100">$</span> git clone <span
+                            class="text-yellow-400">/path/repositorio</span></div>
+
+                    <div class="text-blue-400 flex items-center justify-between gap-4">
+                        <span>Clonar un repositorio remoto</span>
+                        <span class="animate-point text-indigo-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div><span class="text-emerald-100">$</span> git clone <span
+                            class="text-yellow-400">username@host:/path/repositorio</span></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
             <div
                 class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">
                 02</div>
             <h3 class="font-bold text-white uppercase text-xs">Primer commit local</h3>
-            <div class="bg-black/60 p-4 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3">
-                <span class="text-emerald-100">$</span> git add <span class="text-yellow-400">nombre_archivo</span> <br>
-                <span class="text-emerald-100">$</span> git add .<br>
-                <span class="text-emerald-100">$</span> git rm <span class="text-yellow-400">nombre_archivo</span> <br>
-                <span class="text-emerald-100">$</span> git commit -m <span class="text-yellow-400">"proyecto
-                    base"</span>
+
+            <style>
+                @keyframes point-right {
+
+                    0%,
+                    100% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(10px);
+                    }
+
+                    /* Movimiento un poco más amplio */
+                }
+
+                .animate-point {
+                    display: inline-flex;
+                    animation: point-right 1.5s ease-in-out infinite;
+                }
+            </style>
+
+            <div
+                class="bg-black/60 p-5 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3 grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 items-center">
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Envia un archivo al (stagin area)</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git add <span class="text-yellow-400">nombre_archivo</span>
+                </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Envia todos los archivos al (stagin area)</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git add .</div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Elimina del staging area y directorio</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git rm <span class="text-yellow-400">nombre_archivo</span>
+                </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Guardado oficial Snapshot y comentario</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git commit -m <span class="text-yellow-400">"proyecto
+                        base"</span>
+
+
+                </div>
             </div>
         </div>
 
@@ -59,37 +202,358 @@
             <p class="text-slate-500 text-[13px] mt-1 italic">Crear un repositorio remoto en Github</p>
         </div>
 
-        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
             <div
                 class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">
                 04</div>
             <h3 class="font-bold text-white uppercase text-xs">Vincular con la nube (github)</h3>
-            <div class="bg-black/60 p-4 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-400 mt-3">
-                <span class="text-emerald-100">$</span> git remote add origin <span
-                    class="text-yellow-400">URL_DEL_REPO_REMOTO</span>
+
+            <style>
+                @keyframes point-right {
+
+                    0%,
+                    100% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(10px);
+                    }
+
+                    /* Movimiento un poco más amplio */
+                }
+
+                .animate-point {
+                    display: inline-flex;
+                    animation: point-right 1.5s ease-in-out infinite;
+                }
+            </style>
+
+            <div
+                class="bg-black/60 p-5 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3 grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 items-center">
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Relaciona el repositorio local con el repo remoto</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git remote add origin <span
+                        class="text-yellow-400">URL_DEL_REPO_REMOTO</span>
+                </div>
+
+
+
+
             </div>
         </div>
+        </div>
 
-        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
             <div
                 class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">
                 05</div>
             <h3 class="font-bold text-white uppercase text-xs">El gran push</h3>
-            <div class="bg-black/60 p-4 rounded font-mono  text-sm border-l-4 border-indigo-400 mt-3">
-                <span class="text-emerald-500"><span class="text-emerald-100">$</span> git push origin master</span>
+
+            <style>
+                @keyframes point-right {
+
+                    0%,
+                    100% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(10px);
+                    }
+
+                    /* Movimiento un poco más amplio */
+                }
+
+                .animate-point {
+                    display: inline-flex;
+                    animation: point-right 1.5s ease-in-out infinite;
+                }
+            </style>
+
+            <div
+                class="bg-black/60 p-5 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3 grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 items-center">
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Sube los cambios a la rama master del repo remoto</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git push origin master
+                </div>
             </div>
         </div>
+        </div>
 
-        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
             <div
                 class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">
                 06</div>
             <h3 class="font-bold text-white uppercase text-xs">Actualización (Nuevos cambios)</h3>
-            <div class="bg-black/60 p-4 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3">
-                <span class="text-emerald-100">$</span> git status <br>
-                <span class="text-emerald-100">$</span> git add .<br>
-                <span class="text-emerald-100">$</span> git commit -m "nuevo cambio" <br>
-                <span class="text-emerald-100">$</span> git push origin master
+
+            <style>
+                @keyframes point-right {
+
+                    0%,
+                    100% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(10px);
+                    }
+
+                    /* Movimiento un poco más amplio */
+                }
+
+                .animate-point {
+                    display: inline-flex;
+                    animation: point-right 1.5s ease-in-out infinite;
+                }
+            </style>
+
+            <div
+                class="bg-black/60 p-5 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3 grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 items-center">
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Muestra las modificaciones antes de commit o git add</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git status </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Envia todos los archivos al (stagin area)</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git add .</div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Guardado oficial Snapshot y comentario</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git commit -m <span class="text-yellow-400">"Desc nuevo
+                        cambio"</span>
+                </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Sube los cambios a la rama master del repo remoto</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git push origin master
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
+            <div
+                class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">
+                07</div>
+            <h3 class="font-bold text-white uppercase text-xs">Manejo de Ramas</h3>
+
+            <style>
+                @keyframes point-right {
+
+                    0%,
+                    100% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(10px);
+                    }
+
+                    /* Movimiento un poco más amplio */
+                }
+
+                .animate-point {
+                    display: inline-flex;
+                    animation: point-right 1.5s ease-in-out infinite;
+                }
+            </style>
+
+            <div
+                class="bg-black/60 p-5 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3 grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 items-center">
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Lista las ramas que existen</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git branch
+                </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Crea una rama</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git branch <span
+                        class="text-yellow-400">nombre_de_la_rama</span>
+                </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Pasarse a otra rama</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git switch <span
+                        class="text-yellow-400">nombre_de_la_rama</span></div>
+
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Fusiona cambios que ya están en tu repositorio local.<br>(combina dos ramas locales)</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git merge <span
+                        class="text-yellow-400">nombre_de_la_rama</span></div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>(git fetch & git merge) descarga los ultimos cambios del<br>servidor remoto y fusiona
+                        automáticamente con la rama local</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git pull origin <span
+                        class="text-yellow-400">nombre_de_la_rama</span></div>
+
+            </div>
+        </div>
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6 flex-1">
+            <div
+                class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">
+                08</div>
+            <h3 class="font-bold text-white uppercase text-xs">Otros Comandos</h3>
+
+            <style>
+                @keyframes point-right {
+
+                    0%,
+                    100% {
+                        transform: translateX(0);
+                    }
+
+                    50% {
+                        transform: translateX(10px);
+                    }
+
+                    /* Movimiento un poco más amplio */
+                }
+
+                .animate-point {
+                    display: inline-flex;
+                    animation: point-right 1.5s ease-in-out infinite;
+                }
+            </style>
+
+            <div
+                class="bg-black/60 p-5 rounded font-mono text-emerald-500 text-sm border-l-4 border-indigo-500 mt-3 grid grid-cols-[auto_1fr] gap-x-8 gap-y-3 items-center">
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Mostrar el historial de confirmaciones (commits) cronologicamente</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git log
+                </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>Cambia tu directorio al estado de la confirmación (commit)<br> histórica</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git checkout <span
+                        class="text-yellow-400">nombre_archivo</span> </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>**********************************</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git ******** <span
+                        class="text-yellow-400">***********</span>
+                </div>
+
+                <div class="text-blue-400 flex items-center justify-between gap-4">
+                    <span>*******************</span>
+                    <span class="animate-point text-indigo-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+                </div>
+                <div><span class="text-emerald-100">$</span> git ************** <span
+                        class="text-yellow-400">"*******"</span>
+
+
+                </div>
             </div>
         </div>
 
